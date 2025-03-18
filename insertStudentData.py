@@ -2,7 +2,7 @@ import json
 import boto3
 
 # Create a DynamoDB object using the AWS SDK
-dynamodb = boto3.resource('dynamodb')
+dynamodb = boto3.resource('dynamodb', region_name='us-east-2')
 # Use the DynamoDB object to select our table
 table = dynamodb.Table('studentData')
 
